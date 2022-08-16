@@ -10,11 +10,7 @@
 ## 1. 자바의 메모리 구조
 
 <p align="center">
-<<<<<<< HEAD
   <img src="./images/jvm.PNG"/>
-=======
-  <img src="./jvm.PNG"/>
->>>>>>> main
 </p>
 
 - JVM은 실행하기 위해서, OS로부터 메모리를 할당 받고, 이것을 나누어 관리한다.
@@ -109,7 +105,6 @@
 - 공유되는 정보를 사용하기 위하여 굳이 Controller 객체를 사용하고 있는 쓰레드나 Controller 객체 자체가 Block 될 필요는 없다.
 - 내부적으로 상태를 갖는 것이 없으니, 내부의 상태를 변경할 일이 없고 그저 메소드에 대한 정보만 ‘같이 공유해서’ 쓰면 되는 것이기 때문에 동기화에 대한 걱정을 할 필요가 없다.
 
-<<<<<<< HEAD
 - 만약 상태를 가지는 Bean을 만들어야 한다면, scope를 prototype으로 지정해야할 것이다.
   - 하지만 그러한 경우는 거의 보지 못했다.
   - 설상 stateful해야 한다해도, DI를 활용하여 외부에서 하위 개체를 주입한다면 굳이 singleton을 쓰지 않을 이유가 없다.
@@ -321,24 +316,3 @@ Spring MVC로 들어가는 모든 요청과 응답은 DispatcherServlet이 관�
 
 > ApplicationContext는 ContextLoaderListener 클래스에 의해 만들어지고,
 WebApplicationContext는 DispatcherSerlvet 클래스에 의해 만들어집니다.
-=======
-
-
-
-
-
-**ServletContext란? :**
-> 서블릿 컨텍스트(ServletContext)란 하나의 서블릿이 서블릿 컨테이너와 통신하기 위해서 사용되어지는 메서드들을 가지고 있는 클래스가 바로 ServletContext다
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> main
